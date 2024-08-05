@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="832.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FX.FirstSceneController">
+    <children>
+      <Pane layoutX="-2.0" prefHeight="600.0" prefWidth="268.0" style="-fx-background-color: Silver;">
+         <children>
+              <Button fx:id="searchPlayers" alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="172.0" lineSpacing="20.0" mnemonicParsing="false" onAction="#playerSearch" prefHeight="50.0" prefWidth="110.0" style="-fx-background-color: silver;" text="PLAYERS" textFill="#a60a0a">
+                  <font>
+                      <Font name="Cooper Black" size="17.0" />
+                  </font>
+              </Button>
+              <Button fx:id="exitSystem" alignment="CENTER" contentDisplay="CENTER" layoutX="39.0" layoutY="511.0" lineSpacing="20.0" mnemonicParsing="false" onAction="#setExitSystem" prefHeight="51.0" prefWidth="150.0" style="-fx-background-color: silver;" text="Exit System" textFill="#a60a0a">
+                  <font>
+                      <Font name="Cooper Black" size="20.0" />
+                  </font>
+              </Button>
+            <Button fx:id="buy" layoutX="70.0" layoutY="309.0" mnemonicParsing="false" onAction="#onBuyClicked" prefHeight="31.0" prefWidth="77.0" style="-fx-background-color: silver;" text="Buy" textFill="#a60a0a">
+               <font>
+                  <Font name="Cooper Black" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <TableView fx:id="table" layoutX="272.0" layoutY="198.0" prefHeight="331.0" prefWidth="554.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="276.800048828125" text="Name" />
+          <TableColumn fx:id="countryColumn" prefWidth="275.99993896484375" text="Country" />
+        </columns>
+      </TableView>
+      <Label fx:id="CLUBNAME" alignment="CENTER" layoutX="312.0" prefHeight="70.0" prefWidth="452.0" text="MANCHESTER UNITED" textFill="#1110e0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="detailsButton" alignment="CENTER" layoutX="732.0" layoutY="544.0" mnemonicParsing="false" onAction="#showDetails" text="Details">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <MenuButton fx:id="mainButton" layoutX="312.0" layoutY="115.0" mnemonicParsing="false" text="Search">
+        <items>
+            <MenuItem fx:id="playername" mnemonicParsing="false" onAction="#getPlayerName" text="Player Name" />
+            <MenuItem fx:id="salaryRange" mnemonicParsing="false" onAction="#getSalaryRange" text="Salary Range" />
+            <MenuItem fx:id="playerCount" mnemonicParsing="false" onAction="#countPlayers" text="Count Players By Country" />
+            <MenuItem fx:id="country" mnemonicParsing="false" onAction="#getCountry" text="Country" />
+            <Menu mnemonicParsing="false" text="Position">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#viewMid" text="Midfielder" />
+                <MenuItem mnemonicParsing="false" onAction="#viewGoal" text="Goalkeeper" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewDefender" text="Defender" />
+                <MenuItem mnemonicParsing="false" onAction="#viewStriker" text="Forward" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="More">
+              <items>
+                <MenuItem fx:id="mHeight" mnemonicParsing="false" onAction="#getMaxHeight" text="Maximum Height" />
+                  <MenuItem fx:id="mAge" mnemonicParsing="false" onAction="#getMaxAge" text="Maximum Age" />
+                  <MenuItem fx:id="mSalary" mnemonicParsing="false" onAction="#getMaxSalary" text="Maximum Salary" />
+                  <MenuItem fx:id="tSalary" mnemonicParsing="false" onAction="#getTotalSalary" text="Total Salary per year" />
+              </items>
+            </Menu>
+        </items>
+      </MenuButton>
+      <TextField fx:id="textField" layoutX="549.0" layoutY="114.0" onAction="#getFromTextField" prefHeight="26.0" prefWidth="164.0" />
+      <Label fx:id="notFound" alignment="CENTER_RIGHT" layoutX="617.0" layoutY="141.0" prefHeight="18.0" prefWidth="96.0" textFill="#dc0d0d" />
+      <Button fx:id="sell" layoutX="332.0" layoutY="546.0" mnemonicParsing="false" onAction="#onSellClicked" prefHeight="30.0" prefWidth="57.0" text="Sell">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="market" layoutX="531.0" layoutY="546.0" mnemonicParsing="false" onAction="#onMarketClicked" text="Market">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

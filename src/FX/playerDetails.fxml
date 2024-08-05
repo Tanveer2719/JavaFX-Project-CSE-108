@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FX.PlayerDetailsController">
+   <children>
+      <Label fx:id="name" graphicTextGap="5.0" layoutX="82.0" layoutY="83.0" lineSpacing="20.0" prefHeight="50.0" prefWidth="290.0" text="name" textFill="#0d0d0dfe">
+         <padding>
+            <Insets right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="country" graphicTextGap="5.0" layoutX="82.0" layoutY="133.0" lineSpacing="20.0" prefHeight="50.0" prefWidth="290.0" text="age" textFill="#0f0f0f">
+         <padding>
+            <Insets right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="club" graphicTextGap="5.0" layoutX="82.0" layoutY="188.0" lineSpacing="20.0" prefHeight="50.0" prefWidth="290.0" text="height">
+         <padding>
+            <Insets right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="age" graphicTextGap="5.0" layoutX="82.0" layoutY="249.0" lineSpacing="20.0" prefHeight="50.0" prefWidth="290.0" text="club">
+         <padding>
+            <Insets right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="position" graphicTextGap="5.0" layoutX="82.0" layoutY="309.0" lineSpacing="20.0" prefHeight="50.0" prefWidth="290.0" text="country">
+         <padding>
+            <Insets right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="height" graphicTextGap="5.0" layoutX="82.0" layoutY="368.0" lineSpacing="20.0" prefHeight="50.0" prefWidth="290.0" text="position">
+         <padding>
+            <Insets right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="jerseyNo" graphicTextGap="5.0" layoutX="82.0" layoutY="428.0" lineSpacing="20.0" prefHeight="50.0" prefWidth="290.0" text="jersey no">
+         <padding>
+            <Insets right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="weeklySalary" graphicTextGap="5.0" layoutX="82.0" layoutY="495.0" lineSpacing="20.0" prefHeight="50.0" prefWidth="290.0" text="salary">
+         <padding>
+            <Insets right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" fitHeight="192.0" fitWidth="210.0" layoutX="476.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
